@@ -6,7 +6,8 @@
 set -e
 set -o pipefail
 
-DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+# DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+DIR="$(dirname "$(greadlink -f "${BASH_SOURCE[0]}")")"
 CHIPYARD_DIR="$(dirname "$DIR")"
 
 usage() {
